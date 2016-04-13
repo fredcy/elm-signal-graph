@@ -1,0 +1,83 @@
+digraph { //
+3 [label="3: input-Mouse.clicks"]; //
+3 -> 6 ; //
+6 [label="6: map1"]; //
+6 -> 8 ; //
+8 [label="8: map1"]; //
+8 -> 9 ; //
+9 [label="9: merge"]; //
+9 -> 10 ; //
+10 [label="10: foldp"]; //
+10 -> 13 ; //
+10 -> 11 ; //
+13 [label="13: map1"]; //
+13 -> 14 ; //
+14 [label="14: output-perform-tasks-tasks"]; //
+11 [label="11: map1"]; //
+11 -> 12 ; //
+12 [label="12: map1"]; //
+12 -> 15 ; //
+15 [label="15: output-main"]; //
+7 [label="7: input-mailbox"]; //
+7 -> 9 ; //
+} //
+1460565213235 3:input-Mouse.clicks NaN->7
+1460565213235 6:map1 3->false
+1460565213235 8:map1 6->false
+1460565213235 9:merge 8->false
+1460565213235 7:input-mailbox NaN->7
+1460565213235 9:merge 7->true
+1460565213235 10:foldp 9->true
+1460565213235 13:map1 10->true
+1460565213235 14:output-perform-tasks-tasks 13->true
+1460565213235 11:map1 10->true
+1460565213235 12:map1 11->true
+1460565213235 15:output-main 12->true
+1460565213794 3:input-Mouse.clicks NaN->7
+1460565213794 6:map1 3->false
+1460565213794 8:map1 6->false
+1460565213794 9:merge 8->false
+1460565213794 7:input-mailbox NaN->7
+1460565213794 9:merge 7->true
+1460565213794 10:foldp 9->true
+1460565213794 13:map1 10->true
+1460565213794 14:output-perform-tasks-tasks 13->true
+1460565213794 11:map1 10->true
+1460565213794 12:map1 11->true
+1460565213794 15:output-main 12->true
+1460565214042 3:input-Mouse.clicks NaN->7
+1460565214042 6:map1 3->false
+1460565214042 8:map1 6->false
+1460565214042 9:merge 8->false
+1460565214042 7:input-mailbox NaN->7
+1460565214042 9:merge 7->true
+1460565214042 10:foldp 9->true
+1460565214042 13:map1 10->true
+1460565214042 14:output-perform-tasks-tasks 13->true
+1460565214042 11:map1 10->true
+1460565214042 12:map1 11->true
+1460565214042 15:output-main 12->true
+1460565215652 3:input-Mouse.clicks NaN->3
+1460565215652 6:map1 3->true
+1460565215652 8:map1 6->true
+1460565215652 9:merge 8->true
+1460565215652 7:input-mailbox NaN->3
+1460565215652 9:merge 7->false
+1460565215652 10:foldp 9->true
+1460565215652 13:map1 10->true
+1460565215652 14:output-perform-tasks-tasks 13->true
+1460565215652 11:map1 10->true
+1460565215652 12:map1 11->true
+1460565215652 15:output-main 12->true
+1460565220476 3:input-Mouse.clicks NaN->3
+1460565220476 6:map1 3->true
+1460565220476 8:map1 6->true
+1460565220476 9:merge 8->true
+1460565220476 7:input-mailbox NaN->3
+1460565220476 9:merge 7->false
+1460565220476 10:foldp 9->true
+1460565220476 13:map1 10->true
+1460565220476 14:output-perform-tasks-tasks 13->true
+1460565220476 11:map1 10->true
+1460565220476 12:map1 11->true
+1460565220476 15:output-main 12->true
