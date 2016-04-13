@@ -34,8 +34,8 @@ view : Signal.Address Action -> Model -> Html.Html
 view address model =
   Html.div
     []
-    [ Html.text "Hello!"
-    , Html.input [ on "input" targetValue (Signal.message address << Update) ] []
+    [ Html.input [ on "input" targetValue (Signal.message address << Update) ] []
+    , Html.div [ ] [ Html.text model ]
     ]
 
 
